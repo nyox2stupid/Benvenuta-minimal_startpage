@@ -52,12 +52,22 @@
 }
 
 body{
-  fade: 1;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   width: 100vw;
   height: 100vh;
   color: var(--main-fg);
   margin:0;
   background-color:var(--main-bg);
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 #time,
